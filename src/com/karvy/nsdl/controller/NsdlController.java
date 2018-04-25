@@ -19,7 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.karvy.nsdl.bean.FileBean;
 import com.karvy.nsdl.bean.NsdlConstants;
 import com.karvy.nsdl.service.NsdlService;
-
+//This is the testing comment for git
 @Controller
 @Scope()
 @RequestMapping("/nsdl")
@@ -33,7 +33,10 @@ public class NsdlController {
 	public ModelAndView showHome() {
 		return new ModelAndView("file-upload");
 	}
-
+// march	
+	
+	//123
+	//adsfadsf
 	@RequestMapping(value = "/fileupload", method = RequestMethod.POST)
 	public ModelAndView uploadFile(@ModelAttribute("fileBean") FileBean fileBean, Model model) {
 		InputStream inputStream = null;
